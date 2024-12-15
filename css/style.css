@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-image: linear-gradient(to bottom, #f9fafb, #d2d6db);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#card {
+  width: 340px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.details-name-username {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.details-profile-thumbnail {
+  width: 64px;
+  height: 64px;
+}
+
+.details-name-username h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171717;
+}
+
+.details-name-username p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252;
+}
+
+.details-bio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525252;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.actions-button {
+  background-color: #4338ca;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin: 0 40px;
+}
+
+.socials-item {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 20%;
+  padding: 8px;
+}
+
+.socials-item-image {
+  width: 20px;
+  height: 20px;
+}
+
+/* media query */
+@media (min-width: 375px) {
+  body {
+    max-height: 812px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-height: 1024px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-height: 1440px;
+  }
+}
+
+/* credits */
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
